@@ -3,9 +3,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
 from dotenv import load_dotenv  
 import argparse
-import os
-import sys
-import json
+
 
 load_dotenv()
 
