@@ -9,7 +9,7 @@ class WriteReportArgsSchema(BaseModel):
     filename: str
     html: str
     
- # StructuredTool is able to take multiple arguments.
+# 'StructuredTool', as opposed to 'Tool', is able to take multiple arguments.
     
 write_report_tool = StructuredTool.from_function(
     name='write_report',
