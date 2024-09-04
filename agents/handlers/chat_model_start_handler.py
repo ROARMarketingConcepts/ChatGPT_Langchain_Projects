@@ -1,6 +1,7 @@
 from langchain.callbacks.base import BaseCallbackHandler
 from pyboxen import boxen
 
+# Set up the 'boxen_print' function to print messages in a box.
 
 def boxen_print(*args, **kwargs):
     print(boxen(*args, **kwargs))
