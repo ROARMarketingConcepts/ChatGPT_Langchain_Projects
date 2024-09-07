@@ -5,7 +5,7 @@ from app.web.files import download
 from app.chat import create_embeddings_for_pdf
 
 
-@shared_task()
+@shared_task()    # This decorator makes the function a Celery task which runs in the background.
 def process_document(pdf_id: int):
     pdf = Pdf.find_by(id=pdf_id)
     with download(pdf.id) as pdf_path:
